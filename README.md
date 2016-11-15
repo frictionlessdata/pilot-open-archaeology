@@ -11,3 +11,5 @@ Characteristics of this dataset:
 * Consists of several tables that relate to each other which can be modeled in a Data Package
 * Has an existing SQL dump for comparison on e.g. ease-of-use, performance, import into different backends
 * Has existing metadata about each table prepared already
+
+Start the script by running `python3 scripts/euroevol.py` in a virtual envinronment with the appropriate packages.

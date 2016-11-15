@@ -55,7 +55,8 @@ def download():
             f.write(r.text)
 
 
-#download()
+if input('Would you like to download data files? Type y and press Enter. Otherwise, type n\n') == 'y':
+    download()
 
 dp = datapackage.DataPackage()
 dp.descriptor['name'] = 'euroevol09'
@@ -76,7 +77,6 @@ for filepath in glob.glob('data/*.csv'):
             }
         )
 
-
-with open('../datapackage.json', 'w') as f:
+with open('datapackage.json', 'w') as f:
   f.write(dp.to_json())
 
